@@ -12,7 +12,7 @@
 //==================================================================================================
 `timescale 1ns / 1ps
 
-module testforalu4_v;
+module testbench;
 
 	reg [3:0] a;
 	reg [3:0] b;
@@ -24,7 +24,7 @@ module testforalu4_v;
 	wire cout_re;
 	wire [3:0] y;
 
-	alu4 uut (
+	alu_4bit uut (
 		.a(a), 
 		.b(b), 
 		.s(s), 

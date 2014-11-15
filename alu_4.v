@@ -1,5 +1,5 @@
 //==================================================================================================
-//  Filename      : alu_4.v
+//  Filename      : alu_4bit.v
 //  Created On    : 2014-11-16 00:11:37
 //  Last Modified : 2014-11-16 00:31:07
 //  Revision      : 
@@ -11,7 +11,7 @@
 //
 //==================================================================================================
 
-module alu4(a, b, s, m, cin_re, cout_re, y);//These port names just comes from our textbook.
+module alu_4bit(a, b, s, m, cin_re, cout_re, y);//These port names just comes from our textbook.
     input [3:0] a, b,s;
     input m, cin_re;
     output cout_re;
