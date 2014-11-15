@@ -1,0 +1,58 @@
+//==================================================================================================
+//  Filename      : testbench.v
+//  Created On    : 2014-11-16 00:53:52
+//  Last Modified : 2014-11-16 00:56:26
+//  Revision      : 
+//  Author        : elnx
+//  Email         : p4ngb0y@gmail.com
+//
+//  Description   : A testbench for ALu_4bit.I use Xilinx ISE to create a template for it.
+//
+//
+//==================================================================================================
+`timescale 1ns / 1ps
+
+module testforalu4_v;
+
+	reg [3:0] a;
+	reg [3:0] b;
+	reg [3:0] s;
+	reg m;
+	reg cin_re;
+	reg clock;
+
+	wire cout_re;
+	wire [3:0] y;
+
+	alu4 uut (
+		.a(a), 
+		.b(b), 
+		.s(s), 
+		.m(m), 
+		.cin_re(cin_re), 
+		.cout_re(cout_re), 
+		.y(y)
+	);
+
+	initial 
+		begin
+			a = 0;
+			b = 0;
+			s = 0;
+			m = 0;
+			cin_re = 0;
+			clock = 0;
+		end
+	always #5000 cin_re = ~(cin_re);
+	always #50 clock = ~clock;
+	always @(posedge clock)
+		begin
+			a = {$random}%16;
+			b = {$random}%16;
+			s = {$random}%16;
+			m = {$random}%2;
+		end
+	
+      
+endmodule
+
