@@ -3,6 +3,9 @@
 
 * alu_4.v是主文件
 * testbench.v是测试模块
-* ModelSim_ testbench().pdf是我用ModelSim仿真出来的结果图
+* modelsim_simulation.pdf是我用ModelSim仿真出来的结果图
+
+##更新
+上传了整个Quartus的项目件夹
 
 
