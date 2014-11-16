@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\lab-alu4\simulation\modelsim
+valu_4bit
+Z1 IDHg8FNi_nAIF=kXUAWoa@2
+Z2 V7h8zfk9K;An65JIc@P6UH2
+Z3 dE:\lab-alu4\simulation\modelsim
+Z4 w1416157147
+Z5 8E:/lab-alu4/alu_4bit.v
+Z6 FE:/lab-alu4/alu_4bit.v
+L0 14
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 o-vlog01compat -work work -O0
+!i10b 1
+Z9 !s100 TO4fAZUmI3THXFX>=D[IW2
+!s85 0
+Z10 !s108 1416157399.295000
+Z11 !s107 E:/lab-alu4/alu_4bit.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/lab-alu4|E:/lab-alu4/alu_4bit.v|
+!s101 -O0
+Z13 !s92 -vlog01compat -work work +incdir+E:/lab-alu4 -O0
+vtestbench
+!i10b 1
+!s100 ;4L]bK`FV`9QmA8WG=aQg1
+I1oDN3TFemfPdLEfGF<hmC1
+VhGfW:390DM[oDMzegDH9`2
+R3
+w1416157177
+8E:/lab-alu4/testbench.v
+FE:/lab-alu4/testbench.v
+L0 15
+R7
+r1
+!s85 0
+31
+!s108 1416157399.439000
+!s107 E:/lab-alu4/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/lab-alu4|E:/lab-alu4/testbench.v|
+!s101 -O0
+R8
+R13
