@@ -6,6 +6,5 @@
 * modelsim_simulation.pdf是我用ModelSim仿真出来的结果图
 
 ##更新
-上传了整个Quartus的项目件夹
-
+上传了整个Quartus的Project目录
 
