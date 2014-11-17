@@ -1,10 +1,11 @@
-##文件说明
+##说明
 这是我的“数字逻辑基础”课程的Project，用Verilog HDL实现的一个4位ALU。
 
-* alu_4.v是主文件
+所有的Quartus项目文件均已经上传。
+
+其中有以下比较重要的文件
+* alu_4bit.v是主文件
 * testbench.v是测试模块
 * modelsim_simulation.pdf是我用ModelSim仿真出来的结果图
-
-##更新
-上传了整个Quartus的Project目录
+* testbench_sigma.v累加器测试模块
 
