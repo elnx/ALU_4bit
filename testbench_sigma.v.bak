@@ -38,19 +38,15 @@ module testbench;
 		begin
 			a = 0;
 			b = 0;
-			s = 0;
+			s = 4'h9;
 			m = 0;
 			cin_re = 0;
 			clock = 0;
 		end
-	always #5000 cin_re = ~(cin_re);
 	always #50 clock = ~clock;
 	always @(posedge clock)
 		begin
-			a <= {$random}%16;
-			b <= {$random}%16;
-			s <= {$random}%16;
-			m <= {$random}%2;
+
 		end
 	
       

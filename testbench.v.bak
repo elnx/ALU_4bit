@@ -47,10 +47,10 @@ module testbench;
 	always #50 clock = ~clock;
 	always @(posedge clock)
 		begin
-			a <= {$random}%16;
-			b <= {$random}%16;
-			s <= {$random}%16;
-			m <= {$random}%2;
+			a = {$random}%16;
+			b = {$random}%16;
+			s = {$random}%16;
+			m = {$random}%2;
 		end
 	
       

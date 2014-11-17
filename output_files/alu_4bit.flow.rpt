@@ -1,5 +1,5 @@
 Flow report for alu_4bit
-Mon Nov 17 01:01:18 2014
+Mon Nov 17 18:42:15 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 17 01:01:18 2014      ;
+; Flow Status                        ; Successful - Mon Nov 17 18:42:15 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; alu_4bit                                   ;
 ; Top-level Entity Name              ; alu_4bit                                   ;
@@ -69,25 +69,38 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/17/2014 01:00:30 ;
+; Start date & time ; 11/17/2014 18:41:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; alu_4bit            ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                   ;
-+-------------------------------------+-------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                         ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+-------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1099328689849.141615722907500 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)     ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                      ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --          ; --             ;
-+-------------------------------------+-------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++--------------------------------------+-------------------------------+---------------+-------------+-----------------+
+; Assignment Name                      ; Value                         ; Default Value ; Entity Name ; Section Id      ;
++--------------------------------------+-------------------------------+---------------+-------------+-----------------+
+; COMPILER_SIGNATURE_ID                ; 1099328689849.141622090905244 ; --            ; --          ; --              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                            ; --            ; --          ; testbench       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                            ; --            ; --          ; testbench_sigma ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                     ; --            ; --          ; eda_simulation  ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                   ; --            ; --          ; eda_simulation  ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)     ; <None>        ; --          ; --              ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE               ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_FILE                  ; testbench.v                   ; --            ; --          ; testbench       ;
+; EDA_TEST_BENCH_FILE                  ; testbench_sigma.v             ; --            ; --          ; testbench_sigma ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench                     ; --            ; --          ; testbench       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench_sigma               ; --            ; --          ; testbench_sigma ;
+; EDA_TEST_BENCH_NAME                  ; testbench                     ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; testbench_sigma               ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 5000 ns                       ; --            ; --          ; testbench       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1000 ns                       ; --            ; --          ; testbench_sigma ;
+; EDA_TIME_SCALE                       ; 1 ps                          ; --            ; --          ; eda_simulation  ;
+; PARTITION_COLOR                      ; 16764057                      ; --            ; --          ; Top             ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING         ; --            ; --          ; Top             ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                        ; --            ; --          ; Top             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                  ; --            ; --          ; --              ;
++--------------------------------------+-------------------------------+---------------+-------------+-----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +108,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 573 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:19     ; 1.0                     ; 818 MB              ; 00:00:08                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 539 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 516 MB              ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 573 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 818 MB              ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 539 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 516 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 487 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:16                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

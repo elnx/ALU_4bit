@@ -12,7 +12,7 @@
 //==================================================================================================
 `timescale 1ns / 1ps
 
-module testbench;
+module testbench_sigma;
 
 	reg [3:0] a;
 	reg [3:0] b;
@@ -38,19 +38,24 @@ module testbench;
 		begin
 			a = 0;
 			b = 0;
-			s = 0;
+			s = 4'h9;
 			m = 0;
-			cin_re = 0;
+			cin_re = 1;//no cin 
 			clock = 0;
 		end
-	always #5000 cin_re = ~(cin_re);
 	always #50 clock = ~clock;
 	always @(posedge clock)
 		begin
-			a <= {$random}%16;
-			b <= {$random}%16;
-			s <= {$random}%16;
-			m <= {$random}%2;
+			if (y == 15)
+				begin
+					a <= 0;
+					b <= 0;
+				end
+			else
+				begin
+					a <= y;
+					b <= b + 1;
+				end
 		end
 	
       

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu_4bit
-Mon Nov 17 01:00:39 2014
+Mon Nov 17 18:41:52 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 17 01:00:39 2014      ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 17 18:41:52 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; alu_4bit                                   ;
 ; Top-level Entity Name              ; alu_4bit                                   ;
@@ -163,13 +163,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; alu_4bit.v                       ; yes             ; User Verilog HDL File  ; E:/lab-alu4/alu_4bit.v       ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; alu_4bit.v                       ; yes             ; User Verilog HDL File  ; E:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -259,7 +259,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -269,13 +269,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Mon Nov 17 01:00:29 2014
+    Info: Processing started: Mon Nov 17 18:41:48 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu_4bit -c alu_4bit
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file alu_4bit.v
     Info (12023): Found entity 1: alu_4bit
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
     Info (12023): Found entity 1: testbench
+Info (12021): Found 1 design units, including 1 entities, in source file testbench_sigma.v
+    Info (12023): Found entity 1: testbench_sigma
 Info (12127): Elaborating entity "alu_4bit" for the top level hierarchy
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(50): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(51): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
@@ -298,7 +300,7 @@ Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(63): variabl
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(64): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10230): Verilog HDL assignment warning at alu_4bit.v(65): truncated value with size 32 to match size of target (5)
 Warning (10240): Verilog HDL Always Construct warning at alu_4bit.v(24): inferring latch(es) for variable "cout", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "cout" at alu_4bit.v(49)
+Info (10041): Inferred latch for "cout" at alu_4bit.v(24)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -308,8 +310,8 @@ Info (21057): Implemented 151 device resources after synthesis - the final resou
     Info (21061): Implemented 132 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
     Info: Peak virtual memory: 585 megabytes
-    Info: Processing ended: Mon Nov 17 01:00:39 2014
-    Info: Elapsed time: 00:00:10
+    Info: Processing ended: Mon Nov 17 18:41:52 2014
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

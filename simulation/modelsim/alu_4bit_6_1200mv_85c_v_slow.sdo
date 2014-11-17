@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "alu_4bit")
-  (DATE "11/17/2014 01:01:18")
+  (DATE "11/17/2014 18:42:15")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 14.0.0 Build 200 06/17/2014 SJ Web Edition")

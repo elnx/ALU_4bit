@@ -1,7 +1,8 @@
 vendor_name = ModelSim
-source_file = 1, E:/lab-alu4/alu_4bit.v
-source_file = 1, E:/lab-alu4/testbench.v
-source_file = 1, E:/lab-alu4/db/alu_4bit.cbx.xml
+source_file = 1, E:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v
+source_file = 1, E:/FDU/study/Fundamentals of Digital Logic/testbench.v
+source_file = 1, E:/FDU/study/Fundamentals of Digital Logic/testbench_sigma.v
+source_file = 1, E:/FDU/study/Fundamentals of Digital Logic/db/alu_4bit.cbx.xml
 design_name = alu_4bit
 instance = comp, \cout_re~output , cout_re~output, alu_4bit, 1
 instance = comp, \y[0]~output , y[0]~output, alu_4bit, 1

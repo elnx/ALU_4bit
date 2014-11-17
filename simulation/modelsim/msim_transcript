@@ -10,14 +10,14 @@
 # ** Warning: Copied D:\altera14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/lab-alu4 {E:/lab-alu4/alu_4bit.v}
+# vlog -vlog01compat -work work +incdir+E:/FDU/study/Fundamentals\ of\ Digital\ Logic {E:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module alu_4bit
 # 
 # Top level modules:
 # 	alu_4bit
 # 
-# vlog -vlog01compat -work work +incdir+E:/lab-alu4 {E:/lab-alu4/testbench.v}
+# vlog -vlog01compat -work work +incdir+E:/FDU/study/Fundamentals\ of\ Digital\ Logic {E:/FDU/study/Fundamentals of Digital Logic/testbench.v}
 # Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
 # -- Compiling module testbench
 # 
@@ -30,11 +30,17 @@
 # Loading work.alu_4bit
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: ASUS  Hostname: ANON  ProcessID: 6976
+# 
+#           Attempting to use alternate WLF file "./wlft1xb0te".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft1xb0te
+# 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 5000 ns
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf E:/lab-alu4/simulation/modelsim/wave.do
-# Printing not supported.
-# Printing not supported.

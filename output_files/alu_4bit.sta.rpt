@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for alu_4bit
-Mon Nov 17 01:01:15 2014
+Mon Nov 17 18:42:12 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -1174,7 +1174,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Mon Nov 17 01:01:10 2014
+    Info: Processing started: Mon Nov 17 18:42:09 2014
 Info: Command: quartus_sta alu_4bit -c alu_4bit
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1231,8 +1231,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 516 megabytes
-    Info: Processing ended: Mon Nov 17 01:01:15 2014
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Mon Nov 17 18:42:12 2014
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
