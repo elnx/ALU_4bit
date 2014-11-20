@@ -175,6 +175,7 @@ cin_re => Add20.IN64
 cin_re => Add22.IN10
 cin_re => Add24.IN10
 cin_re => Add26.IN10
+cin_re => Add28.IN64
 cout_re <= cout.DB_MAX_OUTPUT_PORT_TYPE
 y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE

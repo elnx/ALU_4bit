@@ -4,21 +4,21 @@ K3
 cModel Technology
 Z0 dE:\FDU\study\Fundamentals of Digital Logic\simulation\modelsim
 valu_4bit
-Z1 I4>=SAHQSSkWPgOX;]5IO73
+Z1 I3dPUHcR2jm]UR=a`hc;3D3
 Z2 V7h8zfk9K;An65JIc@P6UH2
 Z3 dE:\FDU\study\Fundamentals of Digital Logic\simulation\modelsim
-Z4 w1416157147
+Z4 w1416496370
 Z5 8E:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v
 Z6 FE:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v
-L0 14
+L0 13
 Z7 OV;L;10.1e;51
 r1
 31
 Z8 o-vlog01compat -work work -O0
 !i10b 1
-Z9 !s100 8Y4f96zb<zij;`I06>QSI2
+Z9 !s100 <I2dR7_2M2z8>MgGfgD2a2
 !s85 0
-Z10 !s108 1416220679.542000
+Z10 !s108 1416497314.873000
 Z11 !s107 E:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v|
 Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FDU/study/Fundamentals of Digital Logic|E:/FDU/study/Fundamentals of Digital Logic/alu_4bit.v|
 !s101 -O0
@@ -37,7 +37,7 @@ R7
 r1
 !s85 0
 31
-!s108 1416220679.732000
+!s108 1416497315.062000
 !s107 E:/FDU/study/Fundamentals of Digital Logic/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FDU/study/Fundamentals of Digital Logic|E:/FDU/study/Fundamentals of Digital Logic/testbench.v|
 !s101 -O0

@@ -34,10 +34,10 @@
 # 
 #           File in use by: ASUS  Hostname: ANON  ProcessID: 6976
 # 
-#           Attempting to use alternate WLF file "./wlft1xb0te".
+#           Attempting to use alternate WLF file "./wlft7diaas".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft1xb0te
+#           Using alternate file: ./wlft7diaas
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct

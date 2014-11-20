@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu_4bit
-Mon Nov 17 18:41:52 2014
+Thu Nov 20 23:26:44 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 17 18:41:52 2014      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 20 23:26:44 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; alu_4bit                                   ;
 ; Top-level Entity Name              ; alu_4bit                                   ;
@@ -179,10 +179,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; I/O pins                 ; 19               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; s[2]~input       ;
-; Maximum fan-out          ; 45               ;
-; Total fan-out            ; 490              ;
-; Average fan-out          ; 2.88             ;
+; Maximum fan-out node     ; s[1]~input       ;
+; Maximum fan-out          ; 43               ;
+; Total fan-out            ; 481              ;
+; Average fan-out          ; 2.83             ;
 +--------------------------+------------------+
 
 
@@ -227,9 +227,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |alu_4bit|Add0             ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |alu_4bit|Add0             ;
 ; 11:1               ; 3 bits    ; 21 LEs        ; 18 LEs               ; 3 LEs                  ; No         ; |alu_4bit|Add0             ;
-; 24:1               ; 3 bits    ; 48 LEs        ; 33 LEs               ; 15 LEs                 ; No         ; |alu_4bit|y                ;
+; 23:1               ; 3 bits    ; 45 LEs        ; 30 LEs               ; 15 LEs                 ; No         ; |alu_4bit|y                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -240,17 +240,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; boundary_port         ; 19                          ;
 ; cycloneiii_lcell_comb ; 133                         ;
-;     arith             ; 17                          ;
-;         3 data inputs ; 17                          ;
-;     normal            ; 116                         ;
-;         0 data inputs ; 3                           ;
+;     arith             ; 21                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 18                          ;
+;     normal            ; 112                         ;
+;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 87                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 86                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 7.17                        ;
+; Max LUT depth         ; 9.40                        ;
+; Average LUT depth     ; 6.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -259,7 +260,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -269,7 +270,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Mon Nov 17 18:41:48 2014
+    Info: Processing started: Thu Nov 20 23:26:32 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu_4bit -c alu_4bit
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file alu_4bit.v
@@ -279,28 +280,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
 Info (12021): Found 1 design units, including 1 entities, in source file testbench_sigma.v
     Info (12023): Found entity 1: testbench_sigma
 Info (12127): Elaborating entity "alu_4bit" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(49): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(50): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(51): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(52): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at alu_4bit.v(52): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(53): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at alu_4bit.v(53): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(54): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(55): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at alu_4bit.v(55): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(56): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10230): Verilog HDL assignment warning at alu_4bit.v(56): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(57): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at alu_4bit.v(57): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(58): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(59): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(60): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at alu_4bit.v(60): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(61): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at alu_4bit.v(61): truncated value with size 32 to match size of target (5)
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(62): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(63): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at alu_4bit.v(64): variable "cin" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at alu_4bit.v(65): truncated value with size 32 to match size of target (5)
-Warning (10240): Verilog HDL Always Construct warning at alu_4bit.v(24): inferring latch(es) for variable "cout", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "cout" at alu_4bit.v(24)
+Warning (10230): Verilog HDL assignment warning at alu_4bit.v(64): truncated value with size 32 to match size of target (5)
+Warning (10240): Verilog HDL Always Construct warning at alu_4bit.v(23): inferring latch(es) for variable "cout", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "cout" at alu_4bit.v(23)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -308,10 +310,10 @@ Info (21057): Implemented 151 device resources after synthesis - the final resou
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 5 output pins
     Info (21061): Implemented 132 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
     Info: Peak virtual memory: 585 megabytes
-    Info: Processing ended: Mon Nov 17 18:41:52 2014
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Thu Nov 20 23:26:44 2014
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:03
 
 

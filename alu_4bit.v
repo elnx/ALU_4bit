@@ -1,16 +1,15 @@
 //==================================================================================================
 //  Filename      : alu_4bit.v
-//  Created On    : 2014-11-16 00:11:37
-//  Last Modified : 2014-11-16 00:31:07
+//  Created On    : 2014-11-20 23:12:36
+//  Last Modified : 2014-11-20 23:12:49
 //  Revision      : 
 //  Author        : elnx
 //  Email         : p4ngb0y@gmail.com
 //
-//  Description   : A project of my courese, Fundamentals of Digital Logic.
+//  Description   : 
 //
 //
 //==================================================================================================
-
 module alu_4bit(a, b, s, m, cin_re, cout_re, y);//These port names just comes from our textbook.
     input [3:0] a, b,s;
     input m, cin_re;
@@ -62,7 +61,7 @@ module alu_4bit(a, b, s, m, cin_re, cout_re, y);//These port names just comes fr
             4'hc: {cout, y} <= a + (a<<1) + cin;
             4'hd: {cout, y} <= (a|b) + a + cin;
             4'he: {cout, y} <= (a|(~b)) + a + cin;
-            4'hf: {cout, y} <= a - 1;
+            4'hf: {cout, y} <= a - 1 + cin;
           endcase
         end
     end
